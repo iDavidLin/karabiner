@@ -1,0 +1,45 @@
+{
+  "title": "vim for preview",
+  "rules": [{
+      "description": "Change shift+delete to forward delete",
+      "manipulators": [{
+        "from": {
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "shift"
+            ],
+            "optional": [
+              "caps_lock"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_forward"
+        }],
+        "type": "basic"
+      }]
+    },
+    {
+      "description": "Change ctrl+delete to forward delete word",
+      "manipulators": [{
+        "from": {
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "control"
+            ],
+            "optional": [
+              "caps_lock"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_forward",
+          "modifiers": "left_option"
+        }],
+        "type": "basic"
+      }]
+    }
+  ]
+}
