@@ -1,5 +1,5 @@
 {
-  "title": "vim for preview",
+  "title": "vim for application",
   "rules": [{
       "description": "Change + h/j/k/l to Arrows",
       "manipulators": [{
@@ -13,10 +13,12 @@
           "conditions": [{
             "type": "frontmost_application_if",
             "bundle_identifiers": [
-              "com.apple.Preview"
+              "com.apple.Preview",
+              "com.apple.iBooksX"
             ],
             "file_paths": [
-              "/Applications/Preview.app/Contents/MacOS/Preview"
+              "/Applications/Preview.app/Contents/MacOS/Preview",
+              "/Applications/iBooks.app/Contents/MacOS/iBooks"
             ]
           }]
         },
@@ -31,11 +33,13 @@
           "conditions": [{
             "type": "frontmost_application_if",
             "bundle_identifiers": [
-              "com.apple.Preview"
+              "com.apple.Preview",
+              "com.apple.iBooksX"
             ],
             "file_paths": [
-              "/Applications/Preview.app/Contents/MacOS/Preview"
-            ]
+              "/Applications/Preview.app/Contents/MacOS/Preview",
+              "/Applications/iBooks.app/Contents/MacOS/iBooks"
+            ] 
           }]
         },
         {
@@ -49,10 +53,12 @@
           "conditions": [{
             "type": "frontmost_application_if",
             "bundle_identifiers": [
-              "com.apple.Preview"
+              "com.apple.Preview",
+              "com.apple.iBooksX"
             ],
             "file_paths": [
-              "/Applications/Preview.app/Contents/MacOS/Preview"
+              "/Applications/Preview.app/Contents/MacOS/Preview",
+              "/Applications/iBooks.app/Contents/MacOS/iBooks"
             ]
           }]
         },
@@ -67,10 +73,12 @@
           "conditions": [{
             "type": "frontmost_application_if",
             "bundle_identifiers": [
-              "com.apple.Preview"
+              "com.apple.Preview",
+              "com.apple.iBooksX"
             ],
             "file_paths": [
-              "/Applications/Preview.app/Contents/MacOS/Preview"
+              "/Applications/Preview.app/Contents/MacOS/Preview",
+              "/Applications/iBooks.app/Contents/MacOS/iBooks"
             ]
           }]
         }

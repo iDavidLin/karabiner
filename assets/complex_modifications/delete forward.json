@@ -1,5 +1,5 @@
 {
-  "title": "vim for preview",
+  "title": "Delete forward",
   "rules": [{
       "description": "Change shift+delete to forward delete",
       "manipulators": [{
