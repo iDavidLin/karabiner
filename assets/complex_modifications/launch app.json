@@ -26,7 +26,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
                 "right_shift"
@@ -38,7 +38,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Applications/Emacs.app'"
+              "shell_command": "open '/Applications/Slack.app'"
             }
           ]
         },
@@ -115,6 +115,44 @@
           "to": [
             {
               "shell_command": "open '/Applications/iTerm.app'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/JetBrains Toolbox/WebStorm.app'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/JetBrains Toolbox/IntelliJ IDEA Ultimate.app'"
             }
           ]
         }
