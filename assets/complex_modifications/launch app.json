@@ -133,7 +133,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Applications/JetBrains Toolbox/WebStorm.app'"
+              "shell_command": "open '/Applications/WebStorm'"
             }
           ]
         },
@@ -152,7 +152,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Applications/JetBrains Toolbox/IntelliJ IDEA Ultimate.app'"
+              "shell_command": "open '/Applications/IntelliJ IDEA Ultimate'"
             }
           ]
         }
