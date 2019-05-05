@@ -1,11 +1,11 @@
 {
   "title": "vim for slack",
   "rules": [{
-    "description": "Ctrl + h/j to navigato to next unread",
+    "description": "Ctrl + d/u to navigato to next/previous unread",
     "manipulators": [{
         "type": "basic",
         "from": {
-          "key_code": "h",
+          "key_code": "d",
           "modifiers": {
             "mandatory": [
               "left_control"
@@ -32,7 +32,7 @@
       {
         "type": "basic",
         "from": {
-          "key_code": "j",
+          "key_code": "u",
           "modifiers": {
             "mandatory": [
               "left_control"
@@ -44,6 +44,36 @@
           "modifiers": [
             "left_option",
             "left_shift"
+          ]
+        }],
+        "conditions": [{
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "com.tinyspeck.slackmacgap"
+          ],
+          "file_paths": [
+            "/Applications/Slack.app/Contents/MacOS/Slack"
+          ]
+        }]
+      }
+    ]
+  }, {
+    "description": "remap command + j to command + k",
+    "manipulators": [
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "j",
+          "modifiers": {
+            "mandatory": [
+              "left_command"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "k",
+          "modifiers": [
+            "left_command"
           ]
         }],
         "conditions": [{
