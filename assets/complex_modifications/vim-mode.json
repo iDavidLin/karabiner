@@ -25,7 +25,13 @@
               "key_code": "left_arrow"
             }
           ],
-          "type": "basic"
+            "type": "basic",
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "org.gnu.Emacs"
+            ]
+          }]
         },
         {
           "from": {
