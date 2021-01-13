@@ -1,0 +1,26 @@
+{
+    "title": "Emacs Key Bindings",
+    "rules": [{
+        "description": "Control w to delete backward",
+        "manipulators": [{
+            "type": "basic",
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "delete_or_backspace",
+                "modifiers": [
+                    "left_option"
+                ]
+            }]
+        }]
+    }]
+}
