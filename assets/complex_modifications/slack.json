@@ -1,91 +1,81 @@
 {
   "title": "vim for slack",
-  "rules": [{
-    "description": "Ctrl + d/u to navigato to next/previous unread",
-    "manipulators": [{
-        "type": "basic",
-        "from": {
-          "key_code": "d",
-          "modifiers": {
-            "mandatory": [
-              "left_control"
-            ]
-          }
-        },
-        "to": [{
-          "key_code": "down_arrow",
-          "modifiers": [
-            "left_option",
-            "left_shift"
-          ]
-        }],
-        "conditions": [{
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "com.tinyspeck.slackmacgap"
+  "rules": [
+    {
+      "description": "Slack Option + d/u to navigato to next/previous unread",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": ["left_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": ["left_option", "left_shift"]
+            }
           ],
-          "file_paths": [
-            "/Applications/Slack.app/Contents/MacOS/Slack"
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.tinyspeck.slackmacgap"],
+              "file_paths": ["/Applications/Slack.app/Contents/MacOS/Slack"]
+            }
           ]
-        }]
-      },
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "u",
-          "modifiers": {
-            "mandatory": [
-              "left_control"
-            ]
-          }
         },
-        "to": [{
-          "key_code": "up_arrow",
-          "modifiers": [
-            "left_option",
-            "left_shift"
-          ]
-        }],
-        "conditions": [{
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "com.tinyspeck.slackmacgap"
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": ["left_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["left_option", "left_shift"]
+            }
           ],
-          "file_paths": [
-            "/Applications/Slack.app/Contents/MacOS/Slack"
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.tinyspeck.slackmacgap"],
+              "file_paths": ["/Applications/Slack.app/Contents/MacOS/Slack"]
+            }
           ]
-        }]
-      }
-    ]
-  }, {
-    "description": "remap command + j to command + k",
-    "manipulators": [
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "j",
-          "modifiers": {
-            "mandatory": [
-              "left_command"
-            ]
-          }
-        },
-        "to": [{
-          "key_code": "k",
-          "modifiers": [
-            "left_command"
-          ]
-        }],
-        "conditions": [{
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "com.tinyspeck.slackmacgap"
+        }
+      ]
+    },
+    {
+      "description": "remap command + j to command + k",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": ["left_command"]
+            }
           ],
-          "file_paths": [
-            "/Applications/Slack.app/Contents/MacOS/Slack"
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["com.tinyspeck.slackmacgap"],
+              "file_paths": ["/Applications/Slack.app/Contents/MacOS/Slack"]
+            }
           ]
-        }]
-      }
-    ]
-  }]
+        }
+      ]
+    }
+  ]
 }
